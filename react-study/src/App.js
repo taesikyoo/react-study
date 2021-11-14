@@ -14,7 +14,9 @@ function App() {
         <div className="App">
             <button onClick={() => onClickButton(+1)}>+1</button>
             <button onClick={() => onClickButton(-1)}>-1</button>
-            <Children count={count} />
+            <Children count={count} setCount={setCount}>
+                <span>나는 자식 요소다</span>
+            </Children>
         </div>
     );
 }
